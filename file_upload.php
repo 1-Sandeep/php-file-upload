@@ -4,7 +4,7 @@ $supported_extensions = ['png', 'jpg', 'jpeg', 'gif', 'webpp'];
 
 // check if form has been submitted
 if (isset($_POST["submit"])) {
-    // check if file was uploaded
+    // check if file was uploaded with the same name as file's original name
     if (!empty($_FILES['upload']['name'])) {
         print_r($_FILES);
         // name correspond to the file name
